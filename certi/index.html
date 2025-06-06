@@ -1,1 +1,28 @@
-"" 
+""
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seguimiento de Certificado</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Consulta tu Certificado</h1>
+      <form id="curp-form">
+        <label for="curp">Ingresa tu CURP:</label>
+        <input type="text" id="curp" name="curp" maxlength="18" required />
+        <button type="submit">Consultar</button>
+        <p id="error-msg" class="error"></p>
+      </form>
+
+      <div id="result" class="hidden">
+        <h2 id="status-msg"></h2>
+        <div class="progress-container" id="progress-bar"></div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
